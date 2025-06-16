@@ -45,7 +45,7 @@ function runGame(gameType) {
 
 
 /**
- * Checks the answer agaist the first element in
+ * Checks the answer against the first element in
  * the returned calculateCorrectAnswer array
  */
 
@@ -104,7 +104,7 @@ function incrementScore() {
  * Gets the current tally of incorrect answers from the DOM and increments it by 1
  */
 
-function incrementWrongAnswers() {
+function incrementWrongAnswer() {
 
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
@@ -122,7 +122,7 @@ function displaySubtractQuestion() {
 
 }
 
-function displayMultiplyQuestion() {
+function displayMultiplyQuestion(operand1, operand2) {
 
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
